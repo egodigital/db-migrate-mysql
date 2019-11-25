@@ -7,13 +7,13 @@ MySQL driver for [db-migrate](https://github.com/db-migrate/node-db-migrate), fo
 Execute
 
 ```bash
-npm install -g @egodigital/db-migrate-mysql
+npm install -g db-migrate-mysql@npm:@egodigital/db-migrate-mysql
 ```
 
 to install it globally or
 
 ```bash
-npm install --save @egodigital/db-migrate-mysql
+npm install --save db-migrate-mysql@npm:@egodigital/db-migrate-mysql
 ```
 
 for your project, where your `package.json` is stored.
