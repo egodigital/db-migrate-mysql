@@ -63,13 +63,13 @@ var MysqlDriver = Base.extend({
         return 'DATETIME';
       case type.BLOB:
         len = parseInt(spec.length, 10) || 1000;
-        if (len > 16777216) {
+        if (len >= 16777216) {
           return 'LONGBLOB';
         }
-        if (len > 65536) {
+        if (len >= 65536) {
           return 'MEDIUMBLOB';
         }
-        if (len > 256) {
+        if (len >= 256) {
           return 'BLOB';
         }
         return 'TINYBLOB';
