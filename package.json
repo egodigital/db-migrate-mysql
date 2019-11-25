@@ -2,6 +2,7 @@
   "name": "@egodigital/db-migrate-mysql",
   "version": "1.2.0",
   "description": "db-migrate mysql driver",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/.bin/vows"
