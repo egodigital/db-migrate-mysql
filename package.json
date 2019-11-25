@@ -5,6 +5,7 @@
   "private": false,
   "main": "index.js",
   "scripts": {
+    "deploy": "npm install && npm audit fix && npm publish",
     "test": "node node_modules/.bin/vows"
   },
   "repository": {
