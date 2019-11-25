@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/@egodigital/db-migrate-mysql.svg)](https://www.npmjs.com/package/@egodigital/db-migrate-mysql)
+
 # db-migrate-mysql 
 
 MySQL driver for [db-migrate](https://github.com/db-migrate/node-db-migrate), forked from [db-migrate/mysql](https://github.com/db-migrate/mysql).
