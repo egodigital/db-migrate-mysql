@@ -45,15 +45,17 @@ var MysqlDriver = Base.extend({
   mapDataType: function (spec) {
     var len;
     switch (spec.type) {
+      case 'tinyint':
+        return spec.type.toUpperCase();
       case type.TEXT:
         len = parseInt(spec.length, 10) || 1000;
-        if (len > 16777216) {
+        if (len >= 16777216) {
           return 'LONGTEXT';
         }
-        if (len > 65536) {
+        if (len >= 65536) {
           return 'MEDIUMTEXT';
         }
-        if (len > 256) {
+        if (len >= 256) {
           return 'TEXT';
         }
         return 'TINYTEXT';
